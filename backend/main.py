@@ -36,3 +36,19 @@ def get_db():
 def get_maincategory(db: Session = Depends(get_db)):
     maincategory = db.query(models.MainCategory).all()
     return maincategory
+
+
+@app.get("/subcategory")
+def get_subcategory(db: Session = Depends(get_db)):
+    subcategory = db.query(models.SubCategory).all()
+    return subcategory
+
+@app.get("/freelancer")
+def get_freelancer(db: Session = Depends(get_db)):
+    freelancer = db.query(models.Freelancer).all()
+    return freelancer
+
+@app.get("/business")
+def get_business(db: Session = Depends(get_db)):
+    business = db.query(models.Business).all()
+    return business
