@@ -1,0 +1,106 @@
+.banner {
+  background: url('src/assets/images/product/barber.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .top-bar {
+    padding: 30px 21px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner-content {
+    padding: 140px 21px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .left-content {
+      h1 {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: #fff;
+        font-size: 0.8rem;
+      }
+    }
+
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        color: #fff;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.top-content-container {
+  padding: 27px 21px;
+  .product-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .icons-container {
+      display: flex;
+      gap: 28px;
+      width: 100%;
+
+      .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        p {
+          color: #000;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .ratings {
+      color: rgba(0, 99, 247, 1);
+      font-size: 0.8rem;
+
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .stars {
+        display: flex;
+        gap: 5px;
+        font-weight: 700;
+        font-size: 1rem;
+
+        border: 1px solid rgba(0, 99, 247, 1);
+        border-radius: 10px;
+        padding: 10px 12px;
+      }
+    }
+  }
+
+  hr {
+    margin-block: 16px;
+    border: 1px dotted rgba(199, 201, 217, 1);
+    width: 100%;
+  }
+}
+
+.bottom-content-container {
+  padding: 27px 21px;
+}

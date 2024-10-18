@@ -1,0 +1,31 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    display: block;
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  body {
+    display: none;
+  }
+}

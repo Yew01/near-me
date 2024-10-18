@@ -1,0 +1,73 @@
+.checkout-container {
+  padding: 27px 21px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgba(28, 28, 40, 1);
+  }
+
+  .top-title {
+    margin-bottom: 32px;
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(28, 28, 40, 1);
+  }
+
+  .shop-service {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-block: 24px;
+  }
+
+  .date-time-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border-top: 1px dotted rgba(143, 144, 166, 1);
+    border-bottom: 1px dotted rgba(143, 144, 166, 1);
+
+    padding-block: 24px;
+    margin-bottom: 24px;
+
+    justify-content: space-between;
+    width: 100%;
+
+    .left-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}
+
+.offers-container {
+  padding: 16px 21px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .offers-left-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    h6 {
+      font-weight: 500;
+      font-size: 1rem;
+      color: rgba(28, 28, 40, 1);
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgba(100, 64, 254, 1);
+  }
+}
