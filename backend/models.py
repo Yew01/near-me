@@ -33,7 +33,7 @@ class Freelancer (Base):
     __tablename__ = "freelancer"
     accountid = Column(String, primary_key=True)
     businessname = Column(String, nullable=False)
-    businessemail = Column(String, nullable=False)
+    emailaddress = Column(String, nullable=False)
     businesstype = Column(String, nullable=False)
     businesssubtype = Column(String, nullable=False)
     contactperson = Column(String, nullable=False)
@@ -43,3 +43,11 @@ class Freelancer (Base):
     zipcode = Column(Integer, nullable=False)
     city = Column(String, nullable=False)
     state = Column(String, nullable=False)
+
+class GeneralService(Base):
+    __tablename__ = "generalservice"
+    gserviceid = Column(String, primary_key=True)
+    mainid = Column(Integer, ForeignKey('maincategory.mainid'), nullable=False)
+    subid = Column(Integer, ForeignKey('subcategory.subid'), nullable=False)
+    description = Column(String, nullable=False)
+    status = Column(String, nullable=False)
