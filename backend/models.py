@@ -51,3 +51,14 @@ class GeneralService(Base):
     subid = Column(Integer, ForeignKey('subcategory.subid'), nullable=False)
     description = Column(String, nullable=False)
     status = Column(String, nullable=False)
+
+class BusinessService(Base):
+    __tablename__ = "businessservice"
+    bserviceid = Column(String, primary_key=True)
+    createdby = Column(String, ForeignKey('business.accountid'), nullable=False)
+    gserviceid = Column(String, ForeignKey('generalservice.gserviceid'), nullable=False)
+    description = Column(String, nullable=False)
+    price = Column(Integer, nullable=False)
+    status = Column(String, nullable=False)
+    duration = Column(Integer, nullable=False) 
+    createdat = Column(DateTime, nullable=False)
