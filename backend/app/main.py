@@ -32,9 +32,6 @@ app.include_router(routes.services.router)
 def read_root():
     return {"message" : "Welcome to near-me, inspired by ZANA"}
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
 # Dependency
 # def get_db():
 #     db = SessionLocal()
