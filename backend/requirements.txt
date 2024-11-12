@@ -2,4 +2,4 @@ fastapi
 sqlalchemy
 uvicorn
 pydantic
-psycopg2-binary  # If you're using PostgreSQL
+psycopg2-binary
