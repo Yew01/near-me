@@ -1,5 +1,5 @@
-Flask  # or FastAPI, Django, etc.
+Flask
 sqlalchemy
 pydantic
-uvicorn  # for FastAPI or appropriate ASGI server
-gunicorn  # for deployment server
+uvicorn  
+gunicorn
