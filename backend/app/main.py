@@ -15,7 +15,7 @@ class PrettyJSONResponse(JSONResponse):
     def render(self, content: any) -> bytes:
         return json.dumps(content, indent=4).encode("utf-8")
 
-app = FastAPI(default_response_class=PrettyJSONResponse)
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
