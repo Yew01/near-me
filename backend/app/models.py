@@ -131,8 +131,8 @@ class OrderItems(Base):
     totalprice = Column(Numeric(8,2), nullable=False)
 
 
-class Invocie(Base):
-    __tablename__ = "invoice"
+# class Invocie(Base):
+#     __tablename__ = "invoice"
 
-class Appointment(Base):
-    __tablename__ = "appointment"
+# class Appointment(Base):
+#     __tablename__ = "appointment"
