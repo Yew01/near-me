@@ -34,3 +34,14 @@ curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_products_
 -H "apikey: SUPABASE_KEY" \
 -H "Authorization: Bearer SUPABASE_KEY"
 
+*** Get Active Main Category
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_maincategories' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Active Filter Services ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_filterservice' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
