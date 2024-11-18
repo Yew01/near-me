@@ -1,6 +1,17 @@
 API Documentation
 
-*** Get Main Category ***
+Extra Note
+- Product ID start with PRD
+- Service ID start with SVR
+- General Service ID start with GS
+- Business AccountID start with BA
+- Freelancer AccountID start with FA
+- User AccountID start with USR
+- OrderID start with ORD
+- InvoicID start with INV
+- AppointmentID start with APT
+
+*** Get Active Main Category ***
 curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_maincategories' \
 -H "Content-Type: application/json" \
 -H "apikey: SUPABASE_KEY" \
@@ -34,14 +45,29 @@ curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_products_
 -H "apikey: SUPABASE_KEY" \
 -H "Authorization: Bearer SUPABASE_KEY"
 
-*** Get Active Main Category
-curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_maincategories' \
+*** Get Active Filter Services ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_filterservice' \
 -H "Content-Type: application/json" \
 -H "apikey: SUPABASE_KEY" \
 -H "Authorization: Bearer SUPABASE_KEY"
 
-*** Get Active Filter Services ***
-curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_filterservice' \
+*** Get Cart by UserID ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_cart_by_userid' \
+-d '{ "p_createdby": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Orders by Createdby *** 
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_orders_by_createdby' \
+-d '{ "p_createdby": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Orders by AccountID ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_orders_by_accountid' \
+-d '{ "p_accountid": "value" }' \
 -H "Content-Type: application/json" \
 -H "apikey: SUPABASE_KEY" \
 -H "Authorization: Bearer SUPABASE_KEY"
