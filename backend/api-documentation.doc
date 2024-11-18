@@ -1,0 +1,36 @@
+API Documentation
+
+*** Get Main Category ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_active_maincategories' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Sub Category by MainID ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_subcategory_by_mainid' \
+-d '{ "p_mainid": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Products by AccountID ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_products_by_accountid' \
+-d '{ "input_accountid": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get GeneralService by MainID and SubID ***
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_generalservice_by_mainid_subid' \
+-d '{ "p_mainid": "value", "p_subid": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
+*** Get Services by AccountID *** 
+curl -X POST 'https://emxpemckylxufulbpriq.supabase.co/rest/v1/rpc/get_products_by_accountid' \
+-d '{ "input_accountid": "value" }' \
+-H "Content-Type: application/json" \
+-H "apikey: SUPABASE_KEY" \
+-H "Authorization: Bearer SUPABASE_KEY"
+
